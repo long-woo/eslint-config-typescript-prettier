@@ -13,7 +13,7 @@ pnpm add -D eslint @longwoo/eslint-config-typescript-prettier
 yarn add -D eslint @longwoo/eslint-config-typescript-prettier
 
 # or
-npm install --save-dev eslint @longwoo/eslint-config-typescript-prettier
+npm install --save-dev @longwoo/eslint-config-typescript-prettier
 ```
 
 2.配置 ESLint
