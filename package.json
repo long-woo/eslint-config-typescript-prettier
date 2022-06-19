@@ -1,7 +1,7 @@
 {
   "name": "@longwoo/eslint-config-typescript-prettier",
   "version": "1.0.0",
-  "description": "Typescript prettier eslint 配置",
+  "description": " 一个 TypeScript 的 ESLint 配置，使用 Prettier 格式化代码。",
   "main": "index.js",
   "keywords": [
     "eslint",

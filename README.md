@@ -2,15 +2,17 @@
 
 🔧 一个 TypeScript 的 ESLint 配置，使用 Prettier 格式化代码。
 
+> 如果需要对 Vue 的代码进行格式化，可以使用 [@longwoo/eslint-config-vue](https://github.com/long-woo/eslint-config-vue)。
+
 ## 使用
 
 1.安装依赖
 
 ```sh
-pnpm add -D eslint @longwoo/eslint-config-typescript-prettier
+pnpm add -D @longwoo/eslint-config-typescript-prettier
 
 # or
-yarn add -D eslint @longwoo/eslint-config-typescript-prettier
+yarn add -D @longwoo/eslint-config-typescript-prettier
 
 # or
 npm install --save-dev @longwoo/eslint-config-typescript-prettier
@@ -29,7 +31,7 @@ npm install --save-dev @longwoo/eslint-config-typescript-prettier
 ```json
 {
   "scripts": {
-    "eslint": "eslint --ext .js,.ts,.tsx src"
+    "eslint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   }
 }
 ```
