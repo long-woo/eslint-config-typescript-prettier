@@ -14,6 +14,10 @@
   ],
   "author": "long.woo longwunet@outlook.com",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
