@@ -22,7 +22,7 @@ npm install --save-dev @longwoo/eslint-config-typescript-prettier
 
 ```json
 {
-  "extends": "@longwoo/eslint-config-typescript-prettier"
+  "extends": "@longwoo/typescript-prettier"
 }
 ```
 
