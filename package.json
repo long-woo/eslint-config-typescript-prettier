@@ -9,6 +9,9 @@
     "typescript-eslint",
     "prettier"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "long.woo longwunet@outlook.com",
   "license": "ISC",
   "dependencies": {
