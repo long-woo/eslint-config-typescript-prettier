@@ -1,6 +1,6 @@
 {
   "name": "@longwoo/eslint-config-typescript-prettier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " 一个 TypeScript 的 ESLint 配置，使用 Prettier 格式化代码。",
   "main": "index.js",
   "keywords": [
@@ -19,15 +19,15 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.17.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.4"
+    "eslint": "^8.27.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "eslint": "^8.17.0",
