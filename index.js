@@ -1,4 +1,4 @@
-module.exports = {
+export default [{
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint'],
 	extends: [
@@ -9,4 +9,4 @@ module.exports = {
 	rules: {
 		'prettier/prettier': 'warn'
 	}
-};
+}];
