@@ -1,37 +1,44 @@
 # eslint-config-typescript-prettier
 
-🔧 一个 TypeScript 的 ESLint 配置，使用 Prettier 格式化代码。
+🔧 ESLint configuration for TypeScript, using Prettier to format code.
 
-> 如果需要对 Vue 的代码进行格式化，可以使用 [@longwoo/eslint-config-vue](https://github.com/long-woo/eslint-config-vue)。
+> If you need to format Vue code, you can use [@loongwoo/eslint-config-vue](https://github.com/long-woo/eslint-config-vue).
 
-## 使用
+## use
 
-1.安装依赖
+1. Install dependencies
 
 ```sh
-pnpm add -D @longwoo/eslint-config-typescript-prettier
+pnpm add -D @loongwoo/eslint-config-typescript-prettier
+
+#or
+yarn add -D @loongwoo/eslint-config-typescript-prettier
 
 # or
-yarn add -D @longwoo/eslint-config-typescript-prettier
-
-# or
-npm install --save-dev @longwoo/eslint-config-typescript-prettier
+npm install --save-dev @loongwoo/eslint-config-typescript-prettier
 ```
 
-2.配置 ESLint
+2. Configure ESLint
+
+```js
+import tsPrettier from '@loongwoo/eslint-config-typescript-prettier';
+
+/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
+export default [
+  ...tsPrettier,
+  {
+    files: ['*.ts', '*.tsx'],
+    ignores: ['src/vite-env.d.ts'],
+  },
+];
+```
+
+3. Open the `package.json` file and add the `eslint` command in the `scripts` configuration.
 
 ```json
 {
-  "extends": "@longwoo/typescript-prettier"
-}
-```
-
-3.打开 `package.json` 文件，在 `scripts` 配置中添加 `eslint` 命令，运行 ESLint 校验代码。
-
-```json
-{
-  "scripts": {
-    "eslint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
-  }
+   "scripts": {
+     "lint": "eslint . --fix"
+   }
 }
 ```

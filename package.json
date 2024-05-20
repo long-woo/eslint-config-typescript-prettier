@@ -1,8 +1,9 @@
 {
   "name": "@loongwoo/eslint-config-typescript-prettier",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "ESLint configuration for TypeScript, using Prettier to format code.",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "eslint",
     "typescript",
