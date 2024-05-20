@@ -1,20 +1,14 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
-
-// export default tseslint.config([{
-// 	parser: '@typescript-eslint/parser',
-// 	plugins: ['@typescript-eslint'],
-// 	extends: [
-// 		'eslint:recommended',
-// 		'plugin:@typescript-eslint/recommended',
-// 		'plugin:prettier/recommended'
-// 	],
-// 	rules: {
-// 		'prettier/prettier': 'warn'
-// 	}
-// }]);
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default tseslint.config(
 	eslint.configs.recommended,
-	...tseslint.configs.recommended
+	...tseslint.configs.recommended,
+	eslintPluginPrettierRecommended,
+	{
+		rules: {
+		  'prettier/prettier': 'warn',
+		},
+	  },
 )
